@@ -68,11 +68,7 @@ function App() {
         setExpenses(tempExpenses);
         setEdit(false);
 
-        if(amount>0){
-          setPlusMinusColor("green");
-        }else{
-          setPlusMinusColor("red");
-        }
+
       } else {
         const singleExpense = { id: uuid(), charge, amount };
         setExpenses([...expenses, singleExpense]);
