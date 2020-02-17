@@ -140,10 +140,18 @@ label {
   font-weight: 300;
   font-size: 1rem;
   color: var(--mainWhite);
-  background-color: var(--primaryColor);
   border-radius: 2px;
   padding: 1px 3px;
 }
+
+.green{
+  background-color: var(--mainGreen);
+}
+
+.red{
+  background-color: var(--mainRed);
+}
+
 .clear-btn,
 .edit-btn {
   background: none;

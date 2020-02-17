@@ -2,14 +2,14 @@ import React from 'react'
 import {MdEdit, MdDelete} from 'react-icons/md'
 
 
-export const ExpenseItem = ({ expense,handleEdit,handleDelete}) => {
+export const ExpenseItem = ({ expense,handleEdit,handleDelete, handlePlusMinusColor}) => {
 
     const { id, charge, amount } = expense
     return (
         <li className="item">
             <div className="info">
                 <span className="expense">{charge}</span>
-                <span className="amount">${amount}</span>
+    <span className={ `amount ${ handlePlusMinusColor(amount) }` } >${amount}</span>
             </div>
             <button className="edit-btn" aria-label="edit button"
             onClick={()=>handleEdit(id)}
